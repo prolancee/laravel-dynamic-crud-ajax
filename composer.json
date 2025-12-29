@@ -1,0 +1,70 @@
+{
+    "name": "prolancee/dynamic-crud-ajax",
+    "description": "An advanced dynamic CRUD system built for AJAX-driven workflows in Laravel applications.",
+    "type": "library",
+    "license": "MIT",
+
+    "keywords": [
+        "laravel",
+        "laravel-package",
+        "ajax",
+        "laravel-ajax",
+        "crud",
+        "dynamic-crud",
+        "ajax-crud",
+        "crud-ajax",
+        "crud-generator",
+        "admin-crud",
+        "admin-panel",
+        "data-management",
+        "prolancee"
+    ],
+
+    "homepage": "https://flux.prolancee.com",
+
+    "authors": [
+        {
+            "name": "Salim Shaikh",
+            "email": "salim.shaikh.dev@gmail.com"
+        }
+    ],
+
+    "support": {
+        "issues": "https://github.com/prolancee/laravel-dynamic-crud-ajax/issues",
+        "source": "https://github.com/prolancee/laravel-dynamic-crud-ajax",
+        "docs":   "https://flux.prolancee.com/docs/laravel/dynamic-crud-ajax/2.0.0"
+    },
+
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/salimbuilds"
+        }
+    ],
+
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.0",
+        "prolancee/support": "11.x-dev"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "PROLANCEE\\DYNAMIC\\CRUD\\Ajax\\": "src/"
+        }
+    },
+
+    "extra": {
+        "branch-alias": {
+            "dev-11.x": "11.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "PROLANCEE\\DYNAMIC\\CRUD\\Ajax\\Providers\\AppServiceProvider"
+            ]
+        }
+    },
+
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
