@@ -135,8 +135,8 @@ class Install extends Command
         $this->info('Checking Database & Redis encryption files...');
 
         $dbEncryptFiles = [
-            storage_path('app/prolancee/rdbms.json'),
-            storage_path('app/prolancee/redis.json'),
+            storage_path('app/private/prolancee/rdbms.json'),
+            storage_path('app/private/prolancee/redis.json'),
         ];
 
         $missingDBEncrypt = array_filter(

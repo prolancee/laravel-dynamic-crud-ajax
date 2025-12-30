@@ -12,7 +12,7 @@ class ValidateIntermediateRoutes
     {
         if (!config('prolancee.dynamic.crud.ajax.intermediate_route_enabled', true) && $req->is('prolancee/web/*')) {
 
-            $storedRoutesFile = storage_path('app/prolancee/routes.json');
+            $storedRoutesFile = storage_path('app/private/prolancee/routes.json');
             if (!file_exists($storedRoutesFile)) {
                 return $next($req);
             }
